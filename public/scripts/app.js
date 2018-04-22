@@ -1,30 +1,15 @@
 "use strict";
 
-console.log("HEddy");
+var multiplier = {
+    numbers: [2, 4, 6],
+    multiplyBy: 3,
+    multiply: function multiply() {
+        var _this = this;
 
-var app = React.createElement(
-    "p",
-    null,
-    "This is the JSX"
-);
-var templateTwo = React.createElement(
-    "div",
-    null,
-    React.createElement(
-        "h1",
-        null,
-        "Andrew Mead"
-    ),
-    React.createElement(
-        "p",
-        null,
-        "Age:26"
-    ),
-    React.createElement(
-        "p",
-        null,
-        "Location:Phildelphia"
-    )
-);
-var appRoot = document.getElementById('app');
-ReactDOM.render(templateTwo, appRoot);
+        return this.numbers.map(function (number) {
+            return number * _this.multiplyBy;
+        });
+    }
+};
+
+console.log(multiplier.multiply());

@@ -1,12 +1,19 @@
-console.log("HEddy");
+console.log("nEddy");
 
-var app = <p>This is the JSX</p>
-var templateTwo = (
+const app2 = {
+   title:'Indecision App',
+  subtitle:'yes its me',
+   options:['One','Two']
+}
+
+const templateTwo = (
     <div>
-        <h1>Andrew Mead</h1>
-        <p>Age:26</p>
+        {app2.subtitle && <h1>{app2.title}</h1> }
+        { app2.options.length > 2 ? <p>{'AGE:'+ app2.subtitle}</p> : <p>No options</p>}
+        <p>{ app2.options.length > 0 ? "Here are your options" : "No options"}</p>
         <p>Location:Phildelphia</p>
-    </div>
+    </div>  
 )
-var appRoot = document.getElementById('app');
+const appRoot = document.getElementById('app');
+
 ReactDOM.render(templateTwo,appRoot)
