@@ -1,11 +1,8 @@
+// var name = "praveen" //declare
+// var name = 'nithin' //declare
 
+// let no = 50
+//  no = 60
 
-
-console.log(name)
-
-function get(){
-    let name = "praveen"
-    var kin = "name"
-    console.log(kin)
-}
-
+// const no1 = 70
+// no1 = 80
